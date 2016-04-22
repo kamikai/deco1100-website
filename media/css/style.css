@@ -3,15 +3,18 @@ body {
 }
 
 .jumbotron {
-    box-shadow: inset 0 0 5px #666;
+    box-shadow: inset 0 0 .5em #888;
 }
 
 .info-row {
-    margin-top: 10em;
-    /*border: 1px dashed #888;*/
+    border-radius: .5em;
     padding: 2em;
     background-color: white;
-    box-shadow: inset 0 0 5px #666;
+    box-shadow: inset 0 0 .5em #888;
+}
+
+.info-row:not(:first-child){
+    margin-top: 7.5em;
 }
 
 .footer{
@@ -20,4 +23,13 @@ body {
 
     text-align: center;
     color: #888;
+}
+
+.team-profiles img {
+    margin: auto;
+    max-width: 10em;
+}
+
+.social-buttons {
+    margin-bottom: 1.5em;
 }
