@@ -7,41 +7,77 @@
 
 	<title>Spin 2 Win - Team 17 Project Website</title>
 
-    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous"> -->
+    <link type="text/css" rel="stylesheet" href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
     <link type="text/css" rel="stylesheet" href="https://kamikai.github.io/deco1100-website/media/css/style.css"/>
-    <!--<link type="text/css" rel="stylesheet" href="/media/css/style.css"/>-->
+    <!-- <link type="text/css" rel="stylesheet" href="/media/css/style.css"/> -->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <nav class="navbar navbar-light bg-faded">
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+            &#9776;
+        </button>
+        <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+            <a class="navbar-brand" href="#">Spin-2-Win</a>
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#s2w-home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#s2w-info">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#s2w-why">Why</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#s2w-follow">Follow</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#s2w-team">The Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="jumbotron">
         <div class="container">
-            <h1>Spin 2 Win <small>by Team 17</small></h1>
-            <p>Product Website for Team 17's Deco1100 project</p>
+            <h1 class="display-1">Spin 2 Win</h1>
+            <h2 class="display-3 text-muted">By Team 17</h1>
+            <p class="lead">Product Website for Team 17's Deco1100 project</p>
             <p>
-                <a class="btn btn-primary btn-lg" href="#s2w-info" role="button">Learn more</a>
-                <a class="btn btn-success btn-lg" href="#s2w-info" role="button">Buy now!</a>
+                <a class="btn btn-primary-outline btn-lg" href="#s2w-info" role="button">Learn more</a>
+                <a class="btn btn-success-outline btn-lg" href="#s2w-info" role="button">Follow Spin-2-Win!</a>
             </p>
         </div>
     </div>
     <div class="container document-content">
 
-
-        <div id="s2w-info" class="row info-row">
-            <h2 class="text-right">Stress Relief <em>and</em> Exercise!</h2>
-            <div class="col-md-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="https://drive.google.com/file/d/1CYTM0MGPz60mkArHsITbRSM2qbv9svy2kQ/preview" width="640" height="480"></iframe>
+        <div id="s2w-home" class="info-row">
+            <h2 class="display-3 text-md-center">Spin 2 Win</h2>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://drive.google.com/file/d/1CYTM0MGPz60mkArHsITbRSM2qbv9svy2kQ/preview" width="640" height="480"></iframe>
+                    </div>
                 </div>
-
             </div>
-            <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae deleniti, dicta ex expedita harum, hic impedit ipsam iste nesciunt nulla pariatur quas rem rerum ut vitae voluptates. Placeat, similique?</p>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2 class="text-xs-center" style="margin-top: 2em;">Stress Relief <em>and</em> Exercise!</h2>
+                    <!-- <p class="lead" >
+                        Spin-2-Win
+                    </p> -->
+                    <h3></h3>
+                </div>
             </div>
         </div>
 
-        <div class="row info-row">
-            <h2>About Spin 2 Win</h2>
+        <div id="s2w-info" class="row info-row">
+            <h2 class="display-4 text-md-center">About</h2>
             <div class="col-md-6">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolorum eaque est quas sapiente sint temporibus. Deleniti fugiat quidem tenetur ullam unde. Corporis distinctio modi numquam quae sequi? Aperiam, ipsum!
@@ -49,12 +85,12 @@
                 </p>
             </div>
             <div class="col-md-6">
-                <img class="img-responsive" src="https://kamikai.github.io/deco1100-website/media/img/concept_image.png" alt=""/>
+                <img class="img-fluid" src="https://kamikai.github.io/deco1100-website/media/img/concept_image.png" alt=""/>
             </div>
         </div>
 
-        <div class="row info-row">
-            <h2>But Why?</h2>
+        <div id="s2w-why" class="row info-row">
+            <h2 class="display-4 text-md-center">But Why?</h2>
             <div class="col-md-6">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque consequuntur, corporis deleniti dolores doloribus dolorum eos, inventore ipsam iste laborum modi officiis quae quaerat quas quasi temporibus voluptas, voluptatum.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque consequuntur, corporis deleniti dolores doloribus dolorum eos, inventore ipsam iste laborum modi officiis quae quaerat quas quasi temporibus voluptas, voluptatum.
@@ -64,75 +100,79 @@
             </div>
         </div>
 
-        <div class="row info-row">
-            <h2 class="text-right social-buttons">Interested? Follow us to learn more!</h2>
-            <div class="col-md-2 col-md-offset-1 text-center">
-                <a href="#">
-                    <div class="fa fa-5x fa-envelope-o"></div>
-                    <h4>Email</h4>
-                </a>
-            </div>
-            <div class="col-md-2 text-center">
-                <a href="#">
-                    <div class="fa fa-5x fa-facebook"></div>
-                    <h4>Facebook</h4>
-                </a>
-            </div>
-            <div class="col-md-2 text-center">
-                <a href="#">
-                    <div class="fa fa-5x fa-twitter"></div>
-                    <h4>Twitter</h4>
-                </a>
-            </div>
-            <div class="col-md-2 text-center">
-                <a href="#">
-                    <div class="fa fa-5x fa-instagram"></div>
-                    <h4>Instagram</h4>
-                </a>
-            </div>
-            <div class="col-md-2 text-center">
-                <a href="#">
-                    <div class="fa fa-5x fa-google-plus"></div>
-                    <h4>Google+</h4>
-                </a>
+        <div id="s2w-follow" class="info-row">
+            <h2 class="display-4 text-md-center">Interested? Follow us to learn more!</h2>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-1 text-xs-center">
+                    <a href="#">
+                        <div class="fa fa-5x fa-envelope-o"></div>
+                        <h4>Email</h4>
+                    </a>
+                </div>
+                <div class="col-md-2 text-xs-center">
+                    <a href="#">
+                        <div class="fa fa-5x fa-facebook"></div>
+                        <h4>Facebook</h4>
+                    </a>
+                </div>
+                <div class="col-md-2 text-xs-center">
+                    <a href="#">
+                        <div class="fa fa-5x fa-twitter"></div>
+                        <h4>Twitter</h4>
+                    </a>
+                </div>
+                <div class="col-md-2 text-xs-center">
+                    <a href="#">
+                        <div class="fa fa-5x fa-instagram"></div>
+                        <h4>Instagram</h4>
+                    </a>
+                </div>
+                <div class="col-md-2 text-xs-center">
+                    <a href="#">
+                        <div class="fa fa-5x fa-google-plus"></div>
+                        <h4>Google+</h4>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="row info-row team-profiles">
-            <h2>The Team</h2>
-            <div class="col-md-2 col-md-offset-1 text-center">
-                <img class="img-responsive img-rounded" src="https://kamikai.github.io/deco1100-website/media/img/nyakong.jpg"/>
-                <div>
-                    <h4>Nyakong Buomb-Galou</h4>
-                    Scribe &amp; Archivist
+        <div id="s2w-team" class="info-row">
+            <h2 class="text-xs-center">The Team</h2>
+            <div class="row text-xs-center">
+                <div class="col-md-2 col-md-offset-1">
+                    <img class="img-fluid img-rounded" src="https://kamikai.github.io/deco1100-website/media/img/team/nyakong.jpg"/>
+                    <div>
+                        <h4>Nyakong Buomb-Galou</h4>
+                        Scribe &amp; Archivist
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-2 text-center">
-                <img class="img-responsive img-rounded" src="https://kamikai.github.io/deco1100-website/media/img/thomas.jpg"/>
-                <div>
-                    <h4>Thomas Cranny</h4>
-                    Team Leader
+                <div class="col-md-2">
+                    <img class="img-fluid img-rounded" src="https://kamikai.github.io/deco1100-website/media/img/team/tom.jpg"/>
+                    <div>
+                        <h4>Thomas Cranny</h4>
+                        Team Leader
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-2 text-center">
-                <img class="img-responsive img-rounded" src="https://kamikai.github.io/deco1100-website/media/img/Nelson.jpg"/>
-                <div>
-                    <h4>Nelson Gregory</h4>
-                    Editor &amp; Artist
+                <div class="col-md-2">
+                    <img class="img-fluid img-rounded" src="https://kamikai.github.io/deco1100-website/media/img/team/nelson.jpg"/>
+                    <div>
+                        <h4>Nelson Gregory</h4>
+                        Editor &amp; Artist
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-2 text-center">
-                <img class="img-responsive img-rounded" src="https://kamikai.github.io/deco1100-website/media/img/sofia.jpg"/>
-                <div>
-                    <h4>Sofia Grijalva</h4>
-                    Project Manager
+                <div class="col-md-2">
+                    <img class="img-fluid img-rounded" src="https://kamikai.github.io/deco1100-website/media/img/team/sophia.jpg"/>
+                    <div>
+                        <h4>Sofia Grijalva</h4>
+                        Project Manager
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-2 text-center">
-                <img class="img-responsive img-rounded" src="https://kamikai.github.io/deco1100-website/media/img/huichen.jpg"/>
-                <div>
-                    <h4>Huichen Ouyang</h4>
-                    Completer-Finisher
+                <div class="col-md-2">
+                    <img class="img-fluid img-rounded" src="https://kamikai.github.io/deco1100-website/media/img/team/huichen.jpg"/>
+                    <div>
+                        <h4>Huichen Ouyang</h4>
+                        Completer-Finisher
+                    </div>
                 </div>
             </div>
         </div>
